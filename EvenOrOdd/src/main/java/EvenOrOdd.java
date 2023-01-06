@@ -14,6 +14,15 @@ public class EvenOrOdd {
      * @return a String "Even" if n is even, and "Odd" of in is odd. The test cases are case-sensitive.
      */
     public String decide(int n){
-        return "";
+        n = n % 2;
+        if(n == 0)
+        {
+            return "Even";
+        }
+        else
+        {
+return "Odd";
+        }
+        
     }
 }
