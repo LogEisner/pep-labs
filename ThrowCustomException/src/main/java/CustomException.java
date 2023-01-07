@@ -5,4 +5,10 @@
  * Potentially, this class could also override some the behavior of Exception.
  */
 public class CustomException extends Exception{
+
+    public void exceptionTest() throws CustomException
+    {
+        throw new CustomException();
+    }
+    
 }
