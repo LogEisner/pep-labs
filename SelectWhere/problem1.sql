@@ -1,3 +1,3 @@
-Select *,
-From employee,
+Select *
+From employee
 Where last_name = 'Smith';

@@ -1,3 +1,3 @@
-Select *,
-From employee,
+Select *
+From employee
 Where salary > 75000;
