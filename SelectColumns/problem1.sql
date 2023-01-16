@@ -1,2 +1,2 @@
-Select firstname
+Select firstname,
 From site_user;
