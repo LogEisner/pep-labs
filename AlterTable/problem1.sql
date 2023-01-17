@@ -1,0 +1,1 @@
+Alter Table site_user Add lastname varchar(100);
