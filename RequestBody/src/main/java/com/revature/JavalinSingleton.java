@@ -25,6 +25,7 @@ public class JavalinSingleton {
                 String jsonString = ctx.body();
                 ObjectMapper om = new ObjectMapper();
                 Song song = om.readValue(jsonString, Song.class);
+                ctx.result(jsonString);
         });
 
         /**
@@ -38,12 +39,12 @@ public class JavalinSingleton {
                //implement logic here
                String jsonString = ctx.body();
                ObjectMapper om = new ObjectMapper();
-               Song song = om.readValue(jsonString, Song.class);
+               Song songName = om.readValue(jsonString, Song.class);
 
                ctx.contentType("application/json");
-               song.setSongName("Beatles");
+               songName.setSongName("Beatles");
 
-               String jsonStringReturn = om.writeValueAsString(song);
+               String jsonStringReturn = om.writeValueAsString(songName);
                ctx.result(jsonStringReturn);
 
         });
