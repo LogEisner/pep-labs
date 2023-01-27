@@ -30,15 +30,12 @@ public class Pyramid {
         String str = "";
         for (int i = 1; i <= n; i++) 
         {
-            str = "";
-                    for (var j = 1; j <= i; j++) 
-                    {
-                      str += j + "\n";
-                    }
-                    str = "*";
+            for (int j = 0; j < i; j++) 
+            {
+              str += "*";
+            }
+            str += "\n";
         }
-        return str;
-            
+        return str + "\n";
     }
 }
-
